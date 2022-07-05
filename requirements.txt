@@ -1,7 +1,7 @@
 certifi
 chardet
 future
-hachoir3==3.0a2
+
 idna
 idna-ssl
 multidict
