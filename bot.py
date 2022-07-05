@@ -358,7 +358,7 @@ if __name__ == "__main__" :
     client.connect()
     if not client.is_user_authorized():
         # https://github.com/LonamiWebs/Telethon/issues/36#issuecomment-287735063
-        client.sign_in(bot_token=Config.TG_BOT_TOKEN)
+        client.sign_in(bot_token=Config.BOT_TOKEN)
     me = client.get_me()
     logger.info(me.stringify())
     dispatcher = updater.dispatcher
