@@ -349,10 +349,10 @@ if __name__ == "__main__" :
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
         os.makedirs(Config.DOWNLOAD_LOCATION)
     # Create the Updater and pass it your bot's token.
-    updater = Updater(token=Config.TG_BOT_TOKEN)
+    updater = Updater(token=Config.BOT_TOKEN)
     client = TelegramClient(
         Config.TL_SESSION,
-        Config.APP_ID,
+        Config.API_ID,
         Config.API_HASH
     )
     client.connect()
